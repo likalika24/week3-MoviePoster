@@ -50,6 +50,43 @@ html {
     100% {left: 0;}
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(70, 61, 61, 0.64);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.modal-content {
+    background-color: blanchedalmond;
+    margin: 5% auto;
+    padding: 4rem;
+    width: 600px;
+    height: 600px;
+    animation: zoom-in 1s;
+    color: rgb(64, 64, 79);
+}
+
+@keyframes zoom-in {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+
+.closeBtn {
+    float: right;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.movie-poster-modal {
+    width: 300px;
+}
+
 .movie-info-container {
     opacity: 0;
     /*for animation*/
@@ -155,4 +192,8 @@ footer ul li a {
     text-transform: uppercase/*your code here*/;
     text-decoration: none;
     color: #777;
+}
+
+.movie-poster {
+    cursor: pointer;
 }
